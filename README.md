@@ -29,3 +29,46 @@ The code uses common data science libraries such as pandas, NumPy, matplotlib, s
 - **Model Saving**: Once the model is trained and tuned, it is saved for future use or deployment.
 
 This process is iterative and may involve multiple rounds of training and tuning to achieve the desired performance. The code would use TensorFlow, Keras, or a similar library to implement these steps.
+
+
+### User Manual: Neural Network Hyperparameter Tuning GUI
+
+**1. Introduction**
+
+Welcome to the Neural Network Hyperparameter Tuning GUI! This graphical user interface (GUI) allows you to manually adjust hyperparameters and visualize the training and validation mean absolute error (MAE) of a neural network model.
+
+**2. Getting Started**
+
+To use the GUI, follow these steps:
+
+- Make sure you have Python installed on your system.
+- Install the required libraries by running ***pip install numpy matplotlib scikit-learn tensorflow.***
+
+**3. GUI Overview**
+
+The GUI consists of several elements:
+
+- **Number of Hidden Layers:** Use the spinbox to specify the number of hidden layers in the neural network.
+- **Optimizer:** Choose the optimizer for model training from the dropdown menu.
+- **Epochs:** Set the number of training epochs using the spinbox.
+- **Batch Size:** Select the batch size for training from the dropdown menu.
+- **Neurons and Activation Function:** Enter the number of neurons and select the activation function for each hidden layer.
+- **Buttons:** Use the *"Enter"* button to specify the parameters for each hidden layer and the *"Next Layer"* button to move to the next layer. The *"Train"* button trains the model, the *"Plot"* button visualizes the training and validation MAE, the *"Clear"* button clears the plot and resets the inputs, and the *"Save"* button saves the plot as an image (currently disabled).
+
+**4. Usage**
+
+Follow these steps to use the GUI:
+
+1. Enter the number of hidden layers in the provided spinbox.
+2. Select the optimizer, specify the number of epochs, and choose the batch size.
+3. For each hidden layer, enter the number of neurons and select the activation function. Click "Next Layer" to move to the next layer.
+4. After specifying all hidden layers, click "Train" to train the model.
+5. Once training is complete, click "Plot" to visualize the training and validation MAE.
+6. To clear the plot and reset inputs, click "Clear".
+7. (Optional) Click "Save" to save the plot as an image (currently disabled).
+
+**5. Notes**
+
+Ensure that you have the necessary data prepared before training the model.
+Experiment with different hyperparameters to find the best configuration for your neural network.
+
